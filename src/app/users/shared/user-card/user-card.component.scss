@@ -1,0 +1,58 @@
+$card-color: #222;
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+  padding: .5rem;
+  border: 1px solid #eee;
+  text-decoration: none;
+  color: $card-color;
+  transition: all .1s ease-in-out;
+}
+
+.avatar {
+  display: flex;
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.avatar-src {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(1);
+  transition: all .1s ease-in-out;
+}
+
+.details {
+  margin-left: .5rem;
+  flext: 1 0 0;
+  overflow: hidden;
+}
+
+.full-name {
+  display: block;
+  margin-bottom: .25rem;
+}
+
+
+.first-name {
+  color: lighten($card-color, 50%)
+}
+
+
+.card:hover {
+  border-color: #aeaeae;
+
+  .avatar-src {
+    filter: grayscale(0);
+  }
+}
+
+.email {
+  font-style: italic;
+}

@@ -1,0 +1,29 @@
+$link-color: #5b8dff;
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.page {
+  list-style: none;
+}
+
+.page-link {
+  color: #444;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: .5rem;
+  color: $link-color;
+  transition: color .1s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($link-color, 10%);
+  }
+
+  &.active {
+    color: #000;
+    pointer-events: none;
+  }
+}

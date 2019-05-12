@@ -1,0 +1,52 @@
+$card-color: #222;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+
+  .back-btn {
+    display: block;
+    font-weight: bold;
+    margin-right: 1rem;
+    height: 24px;
+  }
+
+  .full-name {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: .25rem;
+  }
+
+
+  .first-name {
+    color: lighten($card-color, 50%)
+  }
+}
+
+
+.avatar {
+  display: flex;
+  flex: 0 0 auto;
+  width: 128px;
+  height: 128px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+.avatar-src {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.email {
+  font-style: italic;
+}

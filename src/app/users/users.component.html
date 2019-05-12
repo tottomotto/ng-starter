@@ -1,0 +1,6 @@
+<div class="user-cards">
+  <pe-user-card *ngFor="let user of users$ | async" [user]="user" class="user-card">
+  </pe-user-card>
+</div>
+
+<pe-paging [info]="pagingInfo" [currentPage]="currentPage$ | async"></pe-paging>

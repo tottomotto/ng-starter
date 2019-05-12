@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let page of pages" class="page">
+    <a [routerLink]="['.']" [queryParams]="{page: page}" class="page-link" [class.active]="currentPage === page">
+      {{page}}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,18 @@
+<nav class="user-header">
+  <button type="button" class="back-btn" (click)="navUtil.back()">BACK</button>
+
+  <div class="full-name" *ngIf="user$ | async as user">
+    <span class="first-name">{{user.first_name}} </span>
+    <span class="last-name">{{user.last_name}}</span>
+  </div>
+</nav>
+
+<ng-container *ngIf="user$ | async as user">
+  <div class="avatar">
+    <img class="avatar-src" [src]="user.avatar">
+  </div>
+
+  <div class="details">
+    <div class="email">{{user.email}}</div>
+  </div>
+</ng-container>
